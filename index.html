@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navigation">
+        <ul class="nav-ul">
+          <li><a class="nav-li active" href="index.html">Product</a></li>
+          <li><a class="nav-li " href="customer.html">Customers</a></li>
+          <li><a class="nav-li" href="Orders.html">Orders</a></li>
+          <li><a class="nav-li" href="Reports.html">Reports</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+ <h1> Product Page</h1>
+ <input type="text" id="myInput"  placeholder="Search for Product Color.." title="Type in a name" onkeyup="search()">
+ 
+      <table class="table table-hover" id="table">
+        <thread>
+        <tr>
+          <th class="title">name</th>
+          <th class="title">Product Number</th>
+          <th class="title">Color</th>
+          <th class="title">List Price</t>
+          <th class="title">Size</th>
+          <th class="title">Action</th>
+        
+        </tr>
+        </thread>
+        <tbody id="Product-list">
+        </tbody>
+      
+      </table>
+   
+      <div class="main">
+        <button type="button" class="btn btn-primary" id="add-btn">
+          Create New Product
+        </button>
+        <form action="" class="open-form" id="open-form">
+          <button class="close-btn">X</button>
+          <div class="form-blocks">
+            <label for="name" class="form-title"> Name</label>
+  
+            <input
+              type="text"
+              name="name"
+              class="name"
+              id="name"
+              placeholder="name"
+            />
+            <span class="error-text" id="error_name"></span>
+          </div>
+  
+          <div class="form-blocks">
+            <label for="ProductNumber" class="form-title"> Product Number</label>
+            <input
+              type="text"
+              name="ProductNumber"
+              class="ProductNumber"
+              id="ProductNumber"
+              placeholder="Product Number"
+            />
+            <span class="error-text" id="error_ProductNumber"></span>
+          </div>
+          <div class="form-blocks">
+            <label for="color" class="form-title"> Color</label>
+            <input
+              type="text"
+              name="color"
+              class="color"
+              id="color"
+              placeholder="color"
+            />
+            <span class="error-text" id="error_color"></span>
+          </div>
+  
+          <div class="form-blocks">
+            <label for="listPrice" class="form-title"> List Price</label>
+            <input
+              type="text"
+              name="listPrice"
+              class="listPrice"
+              id="listPrice"
+              placeholder="List Price"
+            />
+            <span class="error-text" id="error_listPrice"></span>
+          </div>
+          <div class="form-blocks">
+            <label for="size" class="form-title">Size</label>
+            <input
+              type="text"
+              name="size"
+              class="size"
+              id="size"
+              placeholder="Size"
+            />
+            <span class="error-text" id="error_size"></span>
+          </div>
+          <div class="form-blocks">
+            <button type="reset" value="reset" class="x-btn" id="x-btn">
+              reset
+            </button>
+            <button type="submit" value="submit" id="save-btn">
+              save changes
+            </button>
+          </div>
+        </form>
+      </div>
+     
+    
+    </div>
+
+    <script src="new.js"></script>
+  </body>
+</html>
