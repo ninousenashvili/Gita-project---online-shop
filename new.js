@@ -204,7 +204,7 @@ let add = function () {
       showAlert("Product data deleted", "danger");
     }
   });
-  document.getElementById("open-form").classList.remove("new-form");
+  // document.getElementById("open-form").classList.remove("new-form");
 };
 
 add();
